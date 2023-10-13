@@ -12,11 +12,11 @@ public class Application {
 //            }
 //        }
 
-//        int count = 0;
-//        for (int i = 10; i <= 20; i++) {
-//            count += i;
-//        }
-//        System.out.println(count);
+        int count1 = 0;
+        for (int i = 10; i <= 20; i++) {
+            count1 += i;
+        }
+        System.out.println(count1);
 
 //        for (int i = 10; i <= 40; i++) {
 //            if(i < 15 || i > 20){
