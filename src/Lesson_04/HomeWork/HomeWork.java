@@ -76,6 +76,20 @@ public class HomeWork {
             System.out.println("В условие задачи ничего не сказано про случай когда только два числа равны.");
         }
 
+//        int [] arrayTree = new int[3];
+//        for (int i = 0; i < arrayTree.length; i++) {
+//            arrayTree[i] = scanner.nextInt();
+//        }
+//        int buf = 0;
+//        for (int i = 0; i < arrayTree.length; i++) {
+//            for (int j = 0; j < arrayTree.length; j++) {
+//                if (arrayTree[j] > arrayTree[j+1]) {
+//                    buf = arrayTree[j];
+//                    arrayTree[j+1] = buf;
+//                }
+//            }
+//        }
+
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println();
