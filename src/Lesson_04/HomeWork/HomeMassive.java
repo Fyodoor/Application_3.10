@@ -6,44 +6,44 @@ public class HomeMassive {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         /*1
-
-        1. Создать массив на 10 строк.
-        2. Ввести с клавиатуры 8 строк и сохранить их в массив.
-        3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.*/
-
-        System.out.println("Task 1");
-        String [] arr1 = new String[10];
-        for (int i = 0; i < 8; i++) {
-            arr1[i] = scanner.nextLine();
-        }
-        for (int i = arr1.length - 1; i >= 0 ; i--) {
-            System.out.println(arr1[i]);
-        }
-
-        System.out.println();
-        System.out.println("-----------------------------------------------------------------------------------------");
-        System.out.println();
-
-            /*
-            *2
-
-            1.1. Создай массив на 10 чисел
-            1.2. Считай с консоли 10 чисел и заполни ими массив
-            2. Найти максимальное число из элементов массива
-            * */
-        System.out.println("Task2");
-        int [] arr2 = new int[10];
-        for (int i = 0; i < arr2.length; i++) {
-            arr2[i] = scanner.nextInt();
-        }
-        int maxi = 0;
-        for (int i: arr2) {
-            if(maxi < i) {
-                maxi = i;
-            }
-        }
-        System.out.println("Максимальное число массива arr2: " + maxi);
-
+//
+//        1. Создать массив на 10 строк.
+//        2. Ввести с клавиатуры 8 строк и сохранить их в массив.
+//        3. Вывести содержимое всего массива (10 элементов) на экран в обратном порядке. Каждый элемент - с новой строки.*/
+//
+//        System.out.println("Task 1");
+//        String [] arr1 = new String[10];
+//        for (int i = 0; i < 8; i++) {
+//            arr1[i] = scanner.nextLine();
+//        }
+//        for (int i = arr1.length - 1; i >= 0 ; i--) {
+//            System.out.println(arr1[i]);
+//        }
+//
+//        System.out.println();
+//        System.out.println("-----------------------------------------------------------------------------------------");
+//        System.out.println();
+//
+//            /*
+//            *2
+//
+//            1.1. Создай массив на 10 чисел
+//            1.2. Считай с консоли 10 чисел и заполни ими массив
+//            2. Найти максимальное число из элементов массива
+//            * */
+//        System.out.println("Task2");
+//        int [] arr2 = new int[10];
+//        for (int i = 0; i < arr2.length; i++) {
+//            arr2[i] = scanner.nextInt();
+//        }
+//        int maxi = 0;
+//        for (int i: arr2) {
+//            if(maxi < i) {
+//                maxi = i;
+//            }
+//        }
+//        System.out.println("Максимальное число массива arr2: " + maxi);
+//
         System.out.println();
         System.out.println("-----------------------------------------------------------------------------------------");
         System.out.println();
@@ -56,6 +56,7 @@ public class HomeMassive {
         4. В каждую ячейку массива чисел записать длину строки из массива строк,
         индекс/номер ячейки которой совпадает с текущим индексом из массива чисел.
         */
+        int sc = scanner.nextInt();
         System.out.println("Task 3");
 
         int[] arr3Int = new int[10];
