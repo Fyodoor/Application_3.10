@@ -12,5 +12,6 @@ public class Main {
         System.out.println("Hes age is " + snezhok.getAge());
         System.out.println("His breed is " + snezhok.getBreed());
         System.out.println("Hi is " + snezhok.color);
+        snezhok.printName();
     }
 }
