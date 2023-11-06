@@ -1,4 +1,4 @@
-package Lesson_06.HomeWork_26_10;
+package Lesson_06.HomeWork_26_10.animal;
 
 import Lesson_06.HomeWork_26_10.animal.*;
 
