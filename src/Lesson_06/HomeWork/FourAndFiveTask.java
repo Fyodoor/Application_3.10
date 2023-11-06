@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class FourAndFiveTask {
 
-
+    //home work 23.10
 
 //     5
 //     Написать программу, которая:
@@ -41,11 +41,12 @@ public class FourAndFiveTask {
     static void taskFive(){
         Scanner scanner = new Scanner(System.in);
         int numberN = scanner.nextInt();
-        int max = 0;
+        int[] massiv = new int[numberN];
+        int max = massiv[0];
         for (int i = 0; i < numberN; i++) {
-            int n = scanner.nextInt();
-            if (n > max) {
-                max = n;
+            massiv[i] = scanner.nextInt();
+            if (massiv[i] > max) {
+                max = massiv[i];
             }
         }
         System.out.println(max);
