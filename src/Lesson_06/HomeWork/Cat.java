@@ -18,38 +18,97 @@ public class Cat {
     private String name;
     private double weight = 1.4;
     private int age = 3;
-    private boolean adress;
+    private String address = "Бездомный";
     private String color;
 
     //Создать класс Cat (кот) с пятью конструкторами:
     // -Имя,
     Cat(String name) {
-        this.name = name;
+        setName(name);
     }
     // - Имя, вес, возраст
     Cat(String name, double weight, int age) {
-        this.name = name;
-        this.weight = weight;
-        this.age = age;
+        this(name);
+        setWeight(weight);
+        setAge(age);
     }
     // - Имя, возраст (вес стандартный)
     Cat(String name, int age) {
-        this.name = name;
-        this.age = age;
-        if (weight == 0){
-            weight = 1.5;
-        }
+        this(name, 0,age);
     }
     //- вес, цвет, (имя, адрес и возраст - неизвестные. Кот - бездомный)
     Cat(double weight, String color) {
-        this.weight = weight;
-        this.color = color;
+        this(null,weight,0);
+        setColor(color);
     }
 
     //- вес, цвет, адрес (чужой домашний кот)
-    Cat(double weight, String color, boolean adress) {
-        this.weight = weight;
-        this.color = color;
+    Cat(double weight, String color, String address) {
+        this(weight, color);
+        setAddress(address);
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        if (weight < 1.5 || weight == 0) {
+            weight = 2;
+        }
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        if(age <= 0 || age == 0){
+            age = 1;
+        }
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        if(color == null || color.isBlank()){
+            color = "Kakoi-to cvet";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", age=" + age +
+                ", address=" + address +
+                ", color='" + color + '\'' +
+                '}';
+    }
+}
+
+class Test {
+    public static void main(String[] args) {
+        Cat cat = new Cat("Snezhok");
+        System.out.println(cat.toString());
+    }
 }
