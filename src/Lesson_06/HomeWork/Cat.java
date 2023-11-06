@@ -1,6 +1,7 @@
 package Lesson_06.HomeWork;
 
 public class Cat {
+    //home work 23.10
 //    2
 //
 //    Создать класс Cat (кот) с пятью конструкторами:

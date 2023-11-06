@@ -1,6 +1,7 @@
 package Lesson_06.HomeWork;
 
 public class Human {
+    //home work 23.10
 //      Создать класс Human.
 //      • Добавить в класс Human поля: имя(String), пол(boolean), возраст(int), отец(Human), мать(Human).
 //      • Добавить в класс конструктор public Human(String name, boolean sex, int age).
