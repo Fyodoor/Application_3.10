@@ -36,4 +36,8 @@ public class Animal {
         Cat cat = Cat.getCat();
         System.out.println("Imja cata iz animal " + cat.getName());
     }
+    public final void prirnt(){
+        System.out.println("Hello world");
+    }
+
 }
