@@ -17,8 +17,8 @@ public class Cat {
 //    То же касательно возраста. А вот имени может и не быть (null). То же касается адреса: null.
 
     private String name;
-    private double weight = 1.4;
-    private int age = 3;
+    private double weight;
+    private int age;
     private String address = "Бездомный";
     private String color;
 
