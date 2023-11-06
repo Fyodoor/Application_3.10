@@ -5,7 +5,8 @@ public class Main {
         HumanInterface human = new OldMan();
         System.out.println("Oldman is running " + human.run() + " metrs");
         human = new Children();
-        System.out.println("Oldman is running " + human.run() + " metrs");
+        System.out.println(human.maxOfLifeInYears());
+        System.out.println("Children is running " + human.run() + " metrs");
 
     }
 }

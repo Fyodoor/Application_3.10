@@ -1,5 +1,7 @@
 package Lesson_06.animals;
 
+import Lesson_08.singleton.Cat;
+
 public class Animal {
     String name;
 
@@ -28,5 +30,10 @@ public class Animal {
 
     public void makeNoise() {
         System.out.println("The animal is making some noise");
+    }
+
+    public void printCatName(){
+        Cat cat = Cat.getCat();
+        System.out.println("Imja cata iz animal " + cat.getName());
     }
 }
