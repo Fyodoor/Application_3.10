@@ -1,6 +1,7 @@
 package Lesson_06.HomeWork;
 
 public class Solution {
+    //home work 23.10
 //            3
 //
 //            1. Внутри класса Solution создай public static классы Man и Woman.
