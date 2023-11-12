@@ -1,4 +1,4 @@
-package Consultion;
+package Consultation;
 
 public class Product {
     private String name;

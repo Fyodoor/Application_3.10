@@ -35,4 +35,13 @@ public class User {
     public void setBasket(Basket basket) {
         this.basket = basket;
     }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "login='" + login + '\'' +
+                ", password='" + password + '\'' +
+                ", " + basket +
+                '}';
+    }
 }
