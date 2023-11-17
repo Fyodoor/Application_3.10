@@ -19,6 +19,7 @@ public class Task1 {
         for (int i = 0; i < 5; i++) {
             arrayList1.add(scanner.nextLine());
         }
+        System.out.println("Size arrayList1 " + arrayList1.size());
         for (String s : arrayList1) {
             System.out.println(s);
         }
