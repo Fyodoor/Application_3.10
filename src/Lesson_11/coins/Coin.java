@@ -1,6 +1,6 @@
 package Lesson_11.coins;
 
-public class Coin {
+public class Coin implements Comparable<Coin>{
     private int nominal;
     private double diametr;
     private String country;
@@ -71,5 +71,20 @@ public class Coin {
         result = 31 * result + country.hashCode();
         result = 31 * result + year;
         return result;
+    }
+
+    @Override
+    public int compareTo(Coin o) {
+        if (this.getYear() != o.getYear()) {
+            return this.getYear() - o.getYear();
+        }
+
+        if (this.getNominal() != o.getNominal()) {
+            return this.getNominal() - o.getNominal();
+        }
+        if (this.getDiametr() != o.getDiametr()) {
+            return Double.compare(this.getDiametr(), o.getDiametr());
+        }
+        return this.getCountry().compareTo(o.getCountry());
     }
 }

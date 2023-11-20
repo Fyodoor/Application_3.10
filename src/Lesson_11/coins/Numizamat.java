@@ -1,6 +1,7 @@
 package Lesson_11.coins;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
 public class Numizamat {
     public static void main(String[] args) {
@@ -22,6 +23,13 @@ public class Numizamat {
         System.out.println(compareTwoCoins);
 
         System.out.println(coin1);
+
+        TreeSet<Coin> coinTreeSet = new TreeSet<>();
+        coinTreeSet.add(coin1);
+        coinTreeSet.add(coin2);
+        coinTreeSet.add(coin3);
+        coinTreeSet.add(coin4);
+        coinTreeSet.add(coin5);
 
     }
 }
