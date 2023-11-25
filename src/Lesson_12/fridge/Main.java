@@ -1,7 +1,7 @@
 package Lesson_12.fridge;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Fridge fridge = new Fridge();
 
         fridge.addProducts("Milk", 1);
@@ -17,5 +17,7 @@ public class Main {
         fridge.all();
         fridge.take("Meat", 6);
         fridge.all1();
+        fridge.addOrders();
+        fridge.all();
     }
 }
