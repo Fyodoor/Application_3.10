@@ -64,10 +64,8 @@ class Runner {
 //                    Accaunt.transfer(accaunt1, accaunt2, random.nextInt(100));
 //                }
 //            }
-            lock1.lock();
-            lock2.lock();
+            takeLocks(lock1, lock2);
             try {
-                takeLocks(lock1, lock2);
                 Accaunt.transfer(accaunt1, accaunt2, random.nextInt(100));
 
             } finally {
@@ -86,10 +84,9 @@ class Runner {
 //                    Accaunt.transfer(accaunt2, accaunt1, random.nextInt(100));
 //                }
 //            }
-            lock1.lock();
-            lock2.lock();
+            takeLocks(lock2, lock1);
             try {
-                takeLocks(lock1, lock2);
+
                 Accaunt.transfer(accaunt2, accaunt1, random.nextInt(100));
             } finally {
                 lock1.unlock();
