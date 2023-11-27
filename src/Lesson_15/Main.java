@@ -22,12 +22,16 @@ public class Main {
 
         Coin coin1 = new Coin();
 
-        java.lang.Class<Coin> coin = Coin.class;
-
-//        Class c = coin1.getClass();
+//        Class<Coin> coin = Coin.class;
+//
 //        System.out.println(coin.getName());
 //
-//        Class<?> c2 = Class.forName("Lesson_11.coins.Coin");
+//        Class c = coin1.getClass();
+//
+//        System.out.println(c.getName());
+//
+//        Class<?> c2 = Class.forName("lesson_11.coins.Coin");
+//
 //        System.out.println(c2.getName());
 
 //        Method[] methods = coin.getMethods();
@@ -39,11 +43,9 @@ public class Main {
 //            }
 //        }
 
-        Field[] declaredFields = coin.getDeclaredFields();
-
+//        Field[] declaredFields = coin.getDeclaredFields();
+//
 //        for (Field declaredField : declaredFields) {
-//            System.out.println(declaredField.getName());
-//            System.out.println(declaredField.getType());
 //            declaredField.set(String.class, "newValue");
 //        }
 
