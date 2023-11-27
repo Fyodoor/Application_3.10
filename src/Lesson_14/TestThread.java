@@ -101,12 +101,12 @@ class Runner {
     public void finished() {
         System.out.println("Balance 1st scheta " + accaunt1.getBalance());
         System.out.println("Balance 2st scheta " + accaunt2.getBalance());
-        System.out.println("Summa balancov " + (accaunt1.getBalance() + accaunt2.getBalance()));
+        System.out.println("Total balance of both accounts is " + (accaunt1.getBalance() + accaunt2.getBalance()));
     }
 }
 
 class Accaunt {
-    private int balance = 1000;
+    private int balance = 10000;
 
     public void addToDeposit(int amount) {
         balance += amount;

@@ -3,6 +3,7 @@ package Lesson_14;
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Before calling method run");
+
         FirstRunner firstRunner = new FirstRunner();
         firstRunner.start();
 
