@@ -96,8 +96,9 @@ public class Fridge {
         }
         System.out.println("Холодильник засыпает");
         Thread.sleep(10000);
-//        products.putAll(orders);
-        ordersToProducts(orders);
+//        products.putAll(orders); - заменяет, а не прибавляет значение
+        orders.forEach((key,value) -> products.merge(key,value, (v1, v2) -> v1 + v2)); // аналог ordersToProducts
+//        ordersToProducts(orders);
         orders.clear();
         System.out.println("Заказанные продукты добавлены в холодильник");
     }
