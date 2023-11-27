@@ -1,5 +1,6 @@
 package Lesson_11;
 
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.TreeSet;
 
@@ -24,8 +25,15 @@ public class Main {
 
         char c = 40;
         System.out.println(c);
+//
+//        TreeSet<Integer> integers = new TreeSet<>(new ReverseIntegers());
+        TreeSet<Integer> integers = new TreeSet<>(new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
 
-        TreeSet<Integer> integers = new TreeSet<>(new ReverseIntegers());
 
 
         integers.add(125);

@@ -1,6 +1,8 @@
 package Lesson_06;
 
-public class Cat {
+import Lesson_06.animals.Animal;
+
+public class Cat extends Animal {
     String name;
     int age;
     String breed;
@@ -10,11 +12,16 @@ public class Cat {
     Cat() {
 
     }
-    Cat(String name, int age, String breed, String color) {
+    public Cat(String name, int age, String breed, String color) {
         this.name = name;
         this.age = age;
         this.breed = breed;
         this.color = color;
+    }
+
+    public Cat(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getColor() {
@@ -51,5 +58,15 @@ public class Cat {
 
     public void printName(){
         System.out.println("My name is + " + name);
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", breed='" + breed + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }
